@@ -1,5 +1,3 @@
-/* Home Page Styling */
-
 /* Page Layout */
 
 body {
@@ -78,6 +76,7 @@ body {
   border-top-right-radius: 0%;
   border-bottom-right-radius: 0%;
 }
+/* Home Page Styling */
 
 #linkContainer {
   width: 100%;
@@ -163,20 +162,76 @@ body {
   min-height: 30px;
 }
 
+/* Past Page */
+
+.contentHeader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.subHeader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: left;
+}
+
 table {
-  border-collapse: separate;
-  width: 60%;
-  border: 1px solid;
+  border-collapse: collapse;
+  width: 80%;
+  border: 1px solid black;
 }
 
 tr {
   text-align: center;
+  border-collapse: collapse;
+  border: 1px solid black;
 }
 
 th {
+  font-weight: bold;
+  color: white;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: left;
+}
+
+span {
+  text-align: left;
   font-weight: bold;
 }
 
 .contentTable {
   margin: 0 auto;
+  table-layout: auto;
+  width: 100%;
+}
+
+.tableHeader {
+  background-color: #bf7743;
+}
+
+.sourceCol {
+  width: 70%;
+}
+
+.contentCol {
+  width: 30%;
+}
+
+.sourceList {
+  text-align: left;
+}
+
+.languageList {
+  text-align: left;
+  list-style-type: none;
 }

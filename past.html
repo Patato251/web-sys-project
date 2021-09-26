@@ -6,53 +6,174 @@
   </head>
 
   <body>
-    <!-- #region Navigational Bar-->
-    <div id="navBar">
-      <ul id="barOverlay">
-        <li class="navList">
-          <a class="navLinks" href="index.html">Home</a><br />
-        </li>
-        <li class="navList">
-          <a class="navLinks active" href="past.html">My Past</a><br />
-        </li>
-        <li class="navList">
-          <a class="navLinks" href="future.html">My Future</a><br />
-        </li>
-        <li class="navList comments">
-          <a class="navLinks" href="comments.html">Comments</a><br />
-        </li>
-      </ul>
+    <!-- #region Main Header Title-->
+    <a name="top"></a>
+    <div class="siteHeader">
+      <h1 id="">31268 - Web Systems</h1>
     </div>
     <!-- #endregion -->
+
+    <!-- #region Navigational Bar-->
+    <div class="navBar">
+      <a class="navLinks" href="index.html"><h2>Home</h2></a>
+      <a class="navLinks active" href="past.html"><h2>My Past</h2></a>
+      <a class="navLinks" href="future.html"><h2>Future</h2></a>
+      <a class="navLinks" href="comments.html"><h2>Comments</h2></a>
+    </div>
+    <!-- #endregion -->
+
     <!-- #region Content-->
-    <div id="content">
-      <div class="row">
-        <div class="column" id="leftCol">
-          <h1 class="introHeader">History</h1>
-          <p class="mainContent">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
-            dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+    <div class="contentContainer">
+      <div id="content">
+        <div class="row">
+          <h2 class="contentHeader">Past experiences and History</h2>
+          <hr />
+          <p class="mainText">
+            As my career as a developer slowly grew throughout both my
+            educational and professional timeline, my experiences overall
+            increased and made me who I am as a programmer. The following page
+            outlines the various opportunities I had encountered throughout my
+            journey as well as the skills and knowledge I gained from each. This
+            section will be broken down into two main sections for simiplicity,
+            Educational and Professional.
           </p>
+          <h3 class="subHeader">Educational Experiences</h3>
+          <p class="mainText">
+            The table below lists the various programming languages I had
+            obtained experience in as well as the subjects from which I had been
+            exposed to them. Note that these are not listed in any particular
+            order and are here for purely showcasing my general understanding of
+            programming and development as a whole.
+          </p>
+          <table class="contentTable">
+            <tr class="tableHeader">
+              <th class="sourceCol">Source/Course</th>
+              <th class="contentCol">Language/Framework/Concepts</th>
+            </tr>
+            <tr>
+              <td>
+                <span>Hurlstone Agricultural High School (HSC)</span>
+                <ul class="sourceList">
+                  <li>Engineering Studies & Outside projects</li>
+                </ul>
+              </td>
+              <td>
+                <ul class="languageList">
+                  <li>Scratch</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="sourceCol">
+                <span>University of Technology, Sydney (UTS)</span>
+                <ul class="sourceList">
+                  <li>Introductory Digital Systems</li>
+                  <li>Fundamentals of C Programming</li>
+                  <li>Advanced Digital Systems</li>
+                  <li>Embedded Software</li>
+                  <li>Summer Studio C</li>
+                  <li>Embedded Systems Studio B</li>
+                  <li>Programming Fundamentals</li>
+                  <li>Advanced Robotics</li>
+                  <li>Engineering Research Preparation</li>
+                  <li>Engineering Capstone</li>
+                </ul>
+              </td>
+              <td class="contentCol">
+                <ul class="languageList">
+                  <li>PIC</li>
+                  <li>Xilinx</li>
+                  <li>C</li>
+                  <li>VHDL</li>
+                  <li>C++</li>
+                  <li>Shell Scripting</li>
+                  <li>MATLAB</li>
+                  <li>Python (2 and 3)</li>
+                  <li>Javascript and Node Js</li>
+                  <li>JSON Database Queries</li>
+                  <li>Java</li>
+                  <li>ROS</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <h3 class="subHeader">Professional Opportunities</h3>
+          <p class="mainText">
+            The table below lists the various frameworks and languages I was
+            exposed to during my professional career as well as general concepts
+            and understandings that were instilled into me during my development
+            as a fledgling developer. Note that these are not in any particular
+            order once again.
+          </p>
+          <table class="contentTable">
+            <tr class="tableHeader">
+              <th>Professional Experience/Roles</th>
+              <th>Language/Framework/Concepts</th>
+            </tr>
+            <tr>
+              <td class="sourceCol">
+                <span>SeaLadder (Internship)</span>
+                <ul class="sourceList">
+                  <li>Junior Backend Developer and Intern</li>
+                </ul>
+              </td>
+              <td class="contentCol">
+                <ul class="languageList">
+                  <li>C#</li>
+                  <li>TDD</li>
+                  <li>Unit Testing with AAA Principles</li>
+                  <li>Angular 7</li>
+                  <li>Javascript</li>
+                  <li>Azure CI/CD</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="sourceCol">
+                <span>Suncorp Group</span>
+                <ul class="sourceList">
+                  <li>Junior Software Engineer</li>
+                  <li>Junior Test Engineer</li>
+                  <li>
+                    Junior Developer in Technology and Transformation Team
+                  </li>
+                </ul>
+              </td>
+              <td class="contentCol">
+                <ul class="languageList">
+                  <li>React JS</li>
+                  <li>Enzyme Testing</li>
+                  <li>Testing Library</li>
+                  <li>Cypress</li>
+                  <li>Java: Maven</li>
+                  <li>AWS Serverless</li>
+                  <li>Jenkins CI/CD Pipeline</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
-        <div class="column" id="rightCol">
-          <img id="mainImage" src="Assets/" alt="Past Picture" />
-        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Footer-->
+    <div class="footer">
+      <div class="footerDesc">
+        <p>
+          Designed by P.Le 2021
+          <br />
+          University of Technology, Sydney
+        </p>
+      </div>
+      <div>
+        <a class="returnButton" href="#top"><h4>Return to Top</h4></a>
       </div>
     </div>
     <!-- #endregion -->
