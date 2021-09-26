@@ -2,6 +2,10 @@
 
 /* Page Layout */
 
+body {
+  background-image: linear-gradient(to bottom right, #bf7743,#6e6a67);
+}
+
 .column {
   padding: 10px;
 }
@@ -16,7 +20,7 @@
 }
 
 #rightCol {
-  background-color: rgb(200, 210, 212);
+  /* background-color: rgb(200, 210, 212); */
   width: 40%;
   text-align: center;
   border: 1px solid;
@@ -47,16 +51,19 @@
   text-align: center;
 }
 
-/* NavBar */
+/* Navigational Bar */
+.navBar {
+  padding: 0px 10%
+}
 
 #barOverlay {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  top: 0;
   overflow: hidden;
   background-color: #333;
   position: sticky;
+  top: 0;
   border-radius: 10px;
   border: 1px solid;
 }
@@ -76,6 +83,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navLinks:hover:not(.active) {
@@ -91,6 +99,10 @@
 }
 
 /* Content */
+
+.contentContainer {
+  padding: 0px 15%
+}
 
 .introHeader {
   padding: 30px;
