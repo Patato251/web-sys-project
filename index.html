@@ -24,10 +24,10 @@
     <!-- #region Content-->
     <div class="contentContainer">
       <div id="content">
-        <h1 class="introHeader">A Bit about me!</h1>
+        <h2 class="introHeader">Brief look into my developer career!</h2>
         <img id="mainImage" src="Assets/me2.jpg" alt="Formal Picture" />
         <div class="row">
-          <div class="column">
+          <div class="column2">
             <p class="mainText">
               Hey there, welcome to my page about me and my programming career.
               I'm Patrick Le, currently a final year student in a Bachelor of
@@ -36,7 +36,7 @@
               took into the world of software development.
             </p>
           </div>
-          <div class="column">
+          <div class="column2">
             <p class="mainText">
               Although I didn't start out my professional career in the field of
               programming, I knew that my first steps into the industry were the
@@ -54,12 +54,10 @@
               <h2 class="introHeader">Want to know more about me</h2>
               <p class="mainText">
                 If you're looking to find out more about me, then you've come to
-                the right place. You can navigate around to check out my
-                past experiences,
-                future goals and other information
-                about me. I've also created a
-                comments section if you would like
-                any insight on how I went about creating these pages.
+                the right place. You can navigate around to check out my past
+                experiences, future goals and other information about me. I've
+                also created a comments section if you would like any insight on
+                how I went about creating these pages.
               </p>
               <p class="mainText">
                 I've also placed some handy navigational links right below to if
@@ -67,7 +65,8 @@
                 the screen (don't worry I know how much effort it is to move the
                 mouse all day!!!).
               </p>
-              <table class="contentTable">
+
+              <!-- <table class="contentTable">
                 <tr>
                   <th><a href="past.html">Past</a></th>
                   <th><a href="future.html">Future</a></th>
@@ -92,15 +91,62 @@
                     </a>
                   </td>
                 </tr>
-              </table>
+              </table> -->
             </div>
           </div>
+          <div class="row">
+            <div class="column3">
+              <a href="past.html" class="pageLinks">Past</a>
+            </div>
+            <div class="column3">
+              <a href="future.html" class="pageLinks">Future</a>
+            </div>
+            <div class="column3">
+              <a href="comments.html" class="pageLinks">Comments</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column3">
+              <a href="past.html" id="pastLink">
+                <img
+                  class="pageImgLinks"
+                  id="pastImg"
+                  src="Assets/past.jpg"
+                  alt="Past Image"
+                />
+              </a>
+            </div>
+            <div class="column3">
+              <a href="future.html">
+                <img
+                  class="pageImgLinks"
+                  id="futureImg"
+                  src="Assets/future2.jpg"
+                  alt="Future Image"
+                />
+              </a>
+            </div>
+            <div class="column3">
+              <a href="comments.html">
+                <img
+                  class="pageImgLinks"
+                  id="commentsImg"
+                  src="Assets/comments2.jpeg"
+                  alt="Comment Image"
+                />
+              </a>
+            </div>
+          </div>
+          <br />
+          <br />
         </div>
       </div>
     </div>
     <!-- #endregion -->
     <!-- #region Footer-->
-    <!-- <th><a href="#top">Past</a></th> -->
+    <div class="footer">
+      <a href="#top" class="footerText">Return To Top</a>
+    </div>
     <!-- #endregion -->
   </body>
 </html>
