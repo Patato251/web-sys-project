@@ -2,7 +2,14 @@
 
 body {
   background: linear-gradient(to bottom right, #bf7743, #6e6a67);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+p {
+  font-size: medium;
 }
 
 /* Website Header */
@@ -238,4 +245,10 @@ span {
 .languageList {
   text-align: left;
   list-style-type: none;
+}
+
+/* Future Styling */
+
+.inTextLink {
+  text-decoration: none;
 }
