@@ -11,50 +11,66 @@
     <div class="siteHeader">
       <h1 id="">31268 - Web Systems</h1>
     </div>
+    <a name="top"></a>
     <!-- #endregion -->
     <!-- #region Navigational Bar-->
     <div class="navBar">
-      <ul id="barOverlay">
-        <li class="navList">
-          <a class="navLinks active" href="index.html">Home</a><br />
-        </li>
-        <li class="navList">
-          <a class="navLinks" href="past.html">My Past</a><br />
-        </li>
-        <li class="navList">
-          <a class="navLinks" href="future.html">My Future</a><br />
-        </li>
-        <li class="navList comments">
-          <a class="navLinks" href="comments.html">Comments</a><br />
-        </li>
-      </ul>
+      <a class="navLinks active" href="index.html"><h2>Home</h2></a>
+      <a class="navLinks" href="past.html"><h2>My Past</h2></a>
+      <a class="navLinks" href="future.html"><h2>Future</h2></a>
+      <a class="navLinks" href="comments.html"><h2>Comments</h2></a>
     </div>
     <!-- #endregion -->
-    <br />
     <!-- #region Content-->
     <div class="contentContainer">
       <div id="content">
+        <h1 class="introHeader">A Bit about me!</h1>
+        <img id="mainImage" src="Assets/me2.jpg" alt="Formal Picture" />
         <div class="row">
-          <div class="column" id="leftCol">
-            <h1 class="introHeader">A Bit About Myself</h1>
+          <div class="column">
             <p class="mainText">
-              This is some random text filler that will be used to show the
-              intro contents and describe this webpage
+              Hey there, welcome to my page about me and my programming career.
+              I'm Patrick Le, currently a final year student in a Bachelor of
+              Engineering (Honours) Diploma in Professional Engineering Practice
+              (Electrical) at UTS who wanted to document the journey and path I
+              took into the world of software development.
             </p>
           </div>
-          <div class="column" id="rightCol">
-            <img id="mainImage" src="Assets/me.jpg" alt="Formal Picture" />
+          <div class="column">
+            <p class="mainText">
+              Although I didn't start out my professional career in the field of
+              programming, I knew that my first steps into the industry were the
+              right choice for where I was back when I first started at
+              university to where I am now, a full-stack developer at one of the
+              biggest banks in Australia.
+            </p>
           </div>
         </div>
+        <hr />
 
         <div id="subContent">
           <div class="row">
-            <div id="linkCol">
-              <h2 class="introHeader">Find out more about me below:</h2>
+            <div id="linkContainer">
+              <h2 class="introHeader">Want to know more about me</h2>
+              <p class="mainText">
+                If you're looking to find out more about me, then you've come to
+                the right place. You can navigate around to check out my
+                past experiences,
+                future goals and other information
+                about me. I've also created a
+                comments section if you would like
+                any insight on how I went about creating these pages.
+              </p>
+              <p class="mainText">
+                I've also placed some handy navigational links right below to if
+                you dont want to move that mouse all the way back to the top of
+                the screen (don't worry I know how much effort it is to move the
+                mouse all day!!!).
+              </p>
               <table class="contentTable">
                 <tr>
-                  <th><span>Past</span></th>
-                  <th><span>Future</span></th>
+                  <th><a href="past.html">Past</a></th>
+                  <th><a href="future.html">Future</a></th>
                 </tr>
                 <tr>
                   <td>
@@ -82,6 +98,9 @@
         </div>
       </div>
     </div>
+    <!-- #endregion -->
+    <!-- #region Footer-->
+    <!-- <th><a href="#top">Past</a></th> -->
     <!-- #endregion -->
   </body>
 </html>
