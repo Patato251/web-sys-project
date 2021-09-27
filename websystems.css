@@ -236,6 +236,7 @@ span {
 
 .contentCol {
   width: 30%;
+  word-wrap: break-word;
 }
 
 .sourceList {
