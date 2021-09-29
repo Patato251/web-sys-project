@@ -4,7 +4,7 @@ body {
   background: linear-gradient(to bottom right, #3ba89a, #3063ab);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, sans-serif, "Times New Roman", Times, serif;
   height: 100%;
 }
 
@@ -149,7 +149,7 @@ p {
 .returnButton {
   text-decoration: none;
   text-transform: uppercase;
-  width: 15%;
+  width: 20%;
   float: right;
   color: white;
   min-height: 30px;
@@ -246,8 +246,9 @@ span {
 
 /* Comments Styling */
 
-#structureImage {
+.commentsImages {
   margin: 0% auto;
   display: block;
   max-width: 80%;
+  border: solid black 2px;
 }

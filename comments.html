@@ -124,6 +124,7 @@
             readable site:
           </p>
           <img
+            class="commentsImages"
             id="structureImage"
             src="/Assets/pageStructure.jpg"
             alt="Page Structure"
@@ -345,13 +346,132 @@
 
           <!-- #region Aesthetic Planning-->
           <h3 class="subHeader">Aesthetic Planning</h3>
-          <p></p>
+          <p>
+            With websites being presented to various users, it is given that a
+            presentable and and simplistic website is a key part in not only
+            providing ease of access to the information being presented, but
+            also to appeal to a user's general aesthetic. The goal of keeping
+            simplistic yet functional components is to prevent cluttering and
+            complications around navigation, keeping user retention focused on
+            the positives of the site rather than it's flaws.
+            <br />
+            <br />
+          </p>
+          <h4>Colour Usage</h4>
+          <p>
+            The use of specific colour pallet shown below was to compliment in
+            the minimalistic tone that was being conveyed through the site,
+            whilst keeping consistency throughout each page to help the process
+            of information by presenting certain key components in specific
+            colours. The background gradient used was to assist in the appeal
+            factor of the site whilst preventing monotonous shades from being
+            overused throughout the page:
+            <br />
+          </p>
+          <img
+            class="commentsImages"
+            src="/Assets/colourSpectrum.jpg"
+            id="colourSpectrum"
+            alt="Background Colour Spectrum"
+          />
+          <p>
+            The colour pallete used throughout to represent the various features
+            such as the navigational bar, tables and other elements was used to
+            contrast the background whilst not creating a clash in various
+            colour pallets:
+          </p>
+          <img
+            class="commentsImages"
+            src="/Assets/colourSpectrum2.jpg"
+            id="colourSpectrum2"
+            alt="Element Colour Spectrum"
+          />
+          <h4>Text Colour Usage</h4>
+          <p>
+            To help present information more consistently, the only two colours
+            that were used to present information and text were black and white.
+            Some headers were used as white to help portray them has primary
+            headers within tables or other elements, however the majority of
+            text was done in black to help maintain consistency across the site.
+            Certain text that was done in other colours would be hyperlinks
+            (presented as the standard colours) or special headers.
+            <br />
+            <br />
+          </p>
+          <h4>Font Types</h4>
+          <p>
+            The font that was chosen for the site was Verdana, for it's
+            simplicity and readability. As it is considered a webpage safe font,
+            meaning that it is avaialable as one of the stock default fonts
+            across a majority of HTML5 sites, the font would very rarely be
+            unavailable throughout any browser to be used. However if there were
+            any complications, the site would revert to font fallbacks listed as
+            Arial or Times New Roman.
+            <br />
+            <br />
+            <h4>Header Tag Hierarchy</h4>
+            The use ofspecific header types was also done in order to help
+            maintain consistency across the pages. Layered headers were used in
+            order to display titles, sections and subsections throughout each
+            page without breaking general hierarchy. The header across each page
+            is chosen as a &lt;h1&gt; tag whilst subheadings for each page are
+            &lt;h2&gt; (including the home page, just centre justified).
+          </p>
           <!-- #endregion -->
 
           <!-- #region Accessibility-->
           <h3 class="subHeader">Accessibility Measures</h3>
-          <p></p>
-
+          <p>
+            Alongside the various aesthetic alterations made to help appeal towards the user's interest, several key aspects were integrated to each page for ease of usability of the overall website as well as assisting in the usage of the site. All aspects were considered to follow alongside the guidelines and initiatives outlined by the <a class="inTextLink" href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C Web Accessibility Initiative Guidelines</a>.
+          </p>
+          <h4>Font Sizing</h4>
+          <p>
+            Fonts throughout the website have been kept as a consistent sizing by specificying that the font-size be "medium". This was done to allow for the text to scale to the windows resolutions and general sizing changes whilst viewed on various devices.
+          </p>
+          <img class="commentsImages" src="/Assets/code1.jpg" alt="fontStyling" id="fontCode" />
+          <h4>Website Structure and HTML usage</h4>
+          <p>
+            As there are various images throughout the website's multiple pages, and with no confirmation with whether images and other assets would always load in the correct instance, all images were written with and alt name available in order to allow for the website to function without the specific assets in place. Throughotu the site, many standard elements provided by HTML5 were also used in order to not only maintain consistency, but in the chance that the stylesheet is disabled the functionality of the site remains viable. Examples of this include:
+            <ul>
+              <li>Use of table headers for all tables to distinguish the header from the cell contents</li>
+              <li>Consistent usage of headers and the hierarchy as mentioned previously</li>
+              <li>Consistent useage of standard tags such as &lt;h1&gt; and &lt;p&gt;</li>
+            </ul>
+          </p>
+          <h4>Various Viewport sizing</h4>
+          <p>
+            To account for the variety of devices that can be used to view any given webpage, the website itself was designed for each page to have scalable containers in order to prevent issues with viewing on smaller or larger viewports. This was done through the use of percentage margins and padding for each element as well as the main body containers such as "contentContainer" or image scaling. Images were all scaled to only be a set percentage of their maximum size to also prevent these issues from occurring (on majority of deivces, some devices with extremely small viewports will still encounter issues).
+          </p>
+          <h4>Colour Adjustments and Selection</h4>
+          <p>
+            The site was designed with the intention of being readily accessible by those who are visually impaired due to forms of colour blindness. As approx 300 million people in the world are affected by varying degrees of colour blindness, the website was designed with the intention of all text and information to be displayed still being legible regardless of severity of impairment. The site has been tested against the <a class="inTextLink" href="https://chrome.google.com/webstore/detail/daltonize/obcnmdgpjakcffkcjnonpdlainhphpgh/related">Daltonize</a> extension available for Chromium based browsers, to confirm the viability of the colour pallets chosen for the site design.
+          </p>
+          <div class="row flexRow">
+            <div class="column3">
+                <img
+                  class="pageImgLinks"
+                  id="greenSite"
+                  src="Assets/greenSite.jpg"
+                  alt="Deuteranomaly Image"
+                />
+            </div>
+            <div class="column3">
+                <img
+                  class="pageImgLinks"
+                  id="blueSite"
+                  src="Assets/blueSite.jpg"
+                  alt="Tritanomaly Image"
+                />
+            </div>
+            <div class="column3">
+                <img
+                  class="pageImgLinks"
+                  id="redSite"
+                  src="Assets/redSite.jpg"
+                  alt="Protanomaly Image"
+                />
+            </div>
+          </div>
           <!-- #endregion -->
         </div>
       </div>
