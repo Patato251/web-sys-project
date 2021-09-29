@@ -25,11 +25,11 @@
 
     <!-- #region Content-->
     <div class="contentContainer">
-      <div id="content">
+      <div id="commentsContent">
         <div class="row">
           <h2 class="contentHeader">Comments Reflection and Analysis</h2>
           <hr />
-          <p class="mainText">
+          <p>
             The following section details the general analysis of the
             development of the webpages as well as the general concepts followed
             and strategies employed to meet several critieria in regards to the
@@ -40,19 +40,327 @@
             <li>Aesthetic Planning</li>
             <li>Accessibility Measures</li>
           </ul>
+
+          <!-- #region General Reflection-->
           <h3 class="subHeader">General Reflection</h3>
-          <p class="mainText"></p>
+          <p>
+            After working on the creation of each page, the amount of work and
+            effort required was significantly more that what I was expecting. I
+            had underestimated the difficulty and the sheer extent of work
+            required, however after completing these pages, I have a newfound
+            respect for the level of attention and detail that is required to
+            create a aesthetic and functional page. The work spanned multiple
+            days worth of planning and troubleshooting, with the final result
+            being the given pages as seen.
+          </p>
+          <!-- #endregion -->
+
+          <!-- #region Technical Aspects-->
           <h3 class="subHeader">Technical Aspects</h3>
-          <p class="mainText"></p>
+          <p>
+            The following section outlines the general technical aspects and
+            considerations that were taken into account whilst creating each
+            page. Several subsections will be used to outline independent
+            aspects and components used.
+          </p>
+
+          <h4>Website Structure and Outline</h4>
+          <p>
+            The general website itself consisted of 5 primary files, 4 html
+            pages for each respective page of a home page, past page, future
+            page and comments page, followed by a singular css stylesheet. The
+            following table outlines a brief description for each file:
+          </p>
+          <table class="contentTable">
+            <tr class="tableHeader">
+              <th>Page Name</th>
+              <th>File Name</th>
+              <th>File Type</th>
+              <th>Brief Description</th>
+            </tr>
+            <tr>
+              <td>Home Page</td>
+              <td>index.html</td>
+              <td>HTML</td>
+              <td>
+                Primary page, home page with links to various other pages. Brief
+                introduction to the website and about myself as a developer.
+              </td>
+            </tr>
+            <tr>
+              <td>Past Page</td>
+              <td>past.html</td>
+              <td>HTML</td>
+              <td>Details past programming experieces.</td>
+            </tr>
+            <tr>
+              <td>Future Page</td>
+              <td>future.html</td>
+              <td>HTML</td>
+              <td>Details future goals and endeavours in programming.</td>
+            </tr>
+            <tr>
+              <td>Comments Page</td>
+              <td>comments.html</td>
+              <td>HTML</td>
+              <td>
+                Explains various choices and decisions for website development.
+              </td>
+            </tr>
+            <tr>
+              <td>StyleSheet File</td>
+              <td>websystems.css</td>
+              <td>CSS</td>
+              <td>
+                Stylesheet used to apply varying styles and effects for each
+                class and page.
+              </td>
+            </tr>
+          </table>
+
+          <p>
+            For each of the respective HTML pages, the general layout was as
+            follows in order to create a consistent user experience and easily
+            readable site:
+          </p>
+          <img
+            id="structureImage"
+            src="/Assets/pageStructure.jpg"
+            alt="Page Structure"
+          />
+          <p>
+            The layout as shown above can be broken down into four major
+            components, each with a specified purpose and functionality. It is
+            as follows:
+          </p>
+          <ol>
+            <li>
+              Site Header (h1 Tag class: siteHeader)
+              <br />
+              <p>
+                The primary header that is displayed across each page, it is
+                shown within the diagram in the blue colour highlight. The
+                header itself is used to display the respective subject number
+                and subject name. It is displayed within the page as the largest
+                element, currently represented by a &lt;h1&gt; tag. The tag
+                itself is managed by the "siteHeader" class within the
+                stylesheet, and has alignment centred across all pages. It is
+                also affected as standard by the "body" styling of the whole
+                website, with font-size being enlarged and the font family being
+                Verdana.
+              </p>
+            </li>
+            <li>
+              Navigational Bar (Div class: navBar)
+              <br />
+              <p>
+                The main form of navigation between each webpage. The
+                navigational bar is shown across each page similarly to the
+                header component, represented as the yellow highlight within the
+                diagram. It is represented with the a div container using the
+                class "navbar", with several anchor tags within it for traversal
+                between pages. Inside this navBar class, the margins, position,
+                and general look of the navigational bar itself are all
+                configured within the class styling (background-color, border
+                etc.).
+                <br />
+                <br />
+                Alongside this navbar class, two other primary classes are used
+                within the navBar container to dictate the other features of the
+                bar. The class "navLinks" is a class outlining the styling of
+                the anchor links within the navigational bar itself. This class
+                dictates the look of each link to be representative of a button
+                within the bar, and is made to be of width:25% in order to have
+                equal distribution of each link for a symmetrical display. The
+                class also dictates further styles affecting the text's general
+                aesthetic as well such as the 8% padding applied to limit the
+                page bounds it reaches. Finally the class "active" is used to
+                mimic displaying of the current page to being shown on the
+                browser within the navigational bar, highlighting the anchor
+                with a different primary colour whilst on the link.
+              </p>
+            </li>
+            <li>
+              Content Container (Div class: contentContainer)
+              <br />
+              <p>
+                The primary container for displaying content and information.
+                Represented in the diagram as the green highlight, the content
+                container itself is a parent container within the page to style
+                and essentially have all forms of content required be set within
+                it's bounds. The class "contentContainer" adds a 12% page margin
+                for both left and right to help distinguish itself from the
+                navbar and other text on the page.
+                <br />
+                <br />
+                Although the contents of each page may vary vastly, the
+                container is used in order to maintain a focused outline of
+                where all the various forms of information will be displayed.
+                Inside each of these containers except for the home page, will
+                have the page start with a &lt;h2&gt; tag with a &lt;hr&gt; tag
+                to represent the title of the page. This is to break up what the
+                main pieces of information will be pertaining to.
+              </p>
+            </li>
+            <li>
+              Footer (Div class: footer)
+              <br />
+              <p>
+                The footer banner located at the bottom of each page. This
+                footer, highlighted in orange in the diagram, is used to not
+                only display information in relation to the author of the
+                website as well as the year it was created, but also provide a
+                convenient "Return To Top" button located in the right hand
+                corner. This button adds a level of accessbility for the user
+                interacting with pages of a significant length.
+                <br />
+                <br />
+                The footer is controlled by the "footer" class which dictates
+                the general aesthetic of the footer itself whilst also affixing
+                it's position within each webpage. This position is also done
+                with text being centre aligned. A child class within called
+                "footerText" controls the various text stylings for the return
+                to top button whilst the "footerDesc" class describes the
+                stylings for the description text
+              </p>
+            </li>
+          </ol>
+
+          <p>
+            A further expansion into several key classes used can be seen in the
+            table below:
+          </p>
+          <table class="contentTable">
+            <tr class="tableHeader">
+              <th>Style Name</th>
+              <th>Type</th>
+              <th>Variants/Children</th>
+              <th>Usage</th>
+            </tr>
+            <tr>
+              <td><p>body</p></td>
+              <td><p>Element</p></td>
+              <td><p>N/A</p></td>
+              <td>
+                <p>
+                  General styling applied to the page and it's contents. Note
+                  that this is primarily used for page layout setup as well as
+                  general look of the website without elements.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>p</p></td>
+              <td><p>Element</p></td>
+              <td><p>span</p></td>
+              <td>
+                <p>
+                  Control the general font sizing and justification of general
+                  text and information on the webpage, unless overwritten by a
+                  specific style
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>.navBar</p></td>
+              <td><p>Class</p></td>
+              <td><p>.navLinks, .navLinks:hover:not(.active), .active</p></td>
+              <td>
+                <p>
+                  Controls general look and functionality of the navigational
+                  bar. This includes the hover and active effects that are
+                  applied to the navbar to mimic the effect of hovering over
+                  with a mouse.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>.contentContainer</p></td>
+              <td><p>Class</p></td>
+              <td><p>.row, .row:after, .flexRow, .column3</p></td>
+              <td>
+                <p>
+                  Controls the margins and sizing of the contents that is placed
+                  on any of the webpages. It also controls the general layout of
+                  the contents including the setup of various sections,
+                  subsections and layout to distinguish between various areas of
+                  content.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>.footer</p></td>
+              <td><p>Class</p></td>
+              <td><p>.footerText, .footerDesc, .returnButton</p></td>
+              <td>
+                <p>
+                  Cotrols the styling around the footer itself including it's
+                  fixed position on every page, alongside the look and aesthetic
+                  of the footer with background color and text alignment. Also
+                  controls the contents inside the footer itself.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>.contentHeader</p></td>
+              <td><p>Class</p></td>
+              <td><p>.subHeader, .introHeader</p></td>
+              <td>
+                <p>
+                  Controls the various looks of the header text including
+                  alignment control, text sizing, and any text decorations to be
+                  applied to the header itself.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>table</p></td>
+              <td><p>Element</p></td>
+              <td>
+                <p>
+                  tr, th, td, span, .contentTable, .tableHeader, .sourceCol,
+                  .contentCol, .sourceList, .contentList
+                </p>
+              </td>
+              <td>
+                <p>
+                  Control the table layout including the table rows, columns
+                  styling, as well as table header text styling. Background
+                  colour and gneeral wrapping of text is also managed through
+                  these tags.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>#mainImage</p></td>
+              <td><p>ID</p></td>
+              <td><p>#structureImage</p></td>
+              <td>
+                <p>Control image placement and sizing, alongside alignment</p>
+              </td>
+            </tr>
+          </table>
+
+          <!-- #endregion -->
+
+          <!-- #region Aesthetic Planning-->
           <h3 class="subHeader">Aesthetic Planning</h3>
-          <p class="mainText"></p>
+          <p></p>
+          <!-- #endregion -->
+
+          <!-- #region Accessibility-->
           <h3 class="subHeader">Accessibility Measures</h3>
-          <p class="mainText"></p>
+          <p></p>
+
+          <!-- #endregion -->
         </div>
       </div>
     </div>
     <!-- #endregion -->
-
+    <br />
+    <br />
+    <br />
+    <br />
     <!-- #region Footer-->
     <div class="footer">
       <div class="footerDesc">
